@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/webproject/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<script>
+    $(function () {
+        $(".headC").click(function () {
+            $(".headB").slideToggle();
+        });
+    });
+</script>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="container-small">
+                <button type="button" class="headC">
+                    <span class="fa fa-bars" title="menu"></span>
+                </button>
+                <nav class="headA">
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="headB">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">장바구니</a></li>
+                        <li><a href="#">구매내역</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <br>
+            <div class="containerhome">
+                <a href="index.html"> ~~Pet</a>
+            </div>
+        </div>
+    </header>
+    <br><br>
+
+    <section class="conA">
+        <button type="button" class="conA_C">
+            <span class="fa fa-bars" title="menu"></span>
+        </button>
+        <nav class="conA">
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </nav>
+    </section>
+
+
+    <section class="conB">
+        <div id="slideShow">
+            <ul class="slides">
+                <li><img src="/webproject/images/conB/2f82cbfaf056dd48ac0babd6386ff29b.jpg" alt=""></li>
+                <li><img src="/webproject/images/conB/8c02e57f32478f3c8a66cb381ff64fde.jpg" alt=""></li>
+                <li><img src="/webproject/images/conB/d7189fd4961c32d201a793c2ac9f4a1e.jpg" alt=""></li>
+                <li><img src="/webproject/images/conB/f8651cb0160703c28d3cb6061bb954cb.jpg" alt=""></li>
+            </ul>
+            <p class="controller">
+                <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 --> <span class="prev">&lang;</span> <span
+                    class="next">&rang;</span>
+            </p>
+        </div>
+        <script>
+            let slides = document.querySelector(".slides"); 
+            let slideImg = document.querySelectorAll(".slides li"); 
+            currentIdx = 0; slideCount = slideImg.length; 
+            prev = document.querySelector(".prev"); 
+            next = document.querySelector(".next"); 
+            slideWidth = 300; slideMargin = 100; 
+            slides.style.width = (slideWidth + slideMargin)*slideCount + "px"; 
+            function moveSlide(num){ slides.style.left = -num * 400 + "px"; currentIdx = num; } 
+            prev.addEventListener('click', function(){if(currentIdx !== 0) moveSlide(currentIdx - 1); }); 
+            next.addEventListener('click', function(){if(currentIdx !== slideCount - 1) moveSlide(currentIdx + 1); })
+
+        </script>
+
+
+    </section>
+
+
+    <section class="conC"></section>
+
+
+    <section class="conD"></section>
+
+
+    <section class="conF"></section>
+
+
+    <section class="conG"></section>
+
+
+    <section class="conH"></section>
+
+    <footer></footer>
+</body>
+
+</html>
