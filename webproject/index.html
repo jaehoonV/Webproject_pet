@@ -6,23 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-    <!-- common css -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
-    <!-- common js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-    <!-- this page -->
     <link rel="stylesheet" href="/webproject/css/style.css">
-    
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sildes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
 
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <script>
@@ -44,16 +37,8 @@
             <div class="container-small">
                 <nav class="headA">
                     <ul>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                            </a>
-                        </li>
+                        <li><a href="#"><i class="fab fa-facebook-square fa-3x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
                     </ul>
                 </nav>
                 <button type="button" class="headC">
@@ -97,7 +82,7 @@
     </section>
 
 
-    <section class="conB">
+    <!--<section class="conB">
         <div id="slideShow">
             <ul class="slides">
                 <li><img src="/webproject/images/conB/2f82cbfaf056dd48ac0babd6386ff29b.jpg" alt=""></li>
@@ -106,10 +91,11 @@
                 <li><img src="/webproject/images/conB/f8651cb0160703c28d3cb6061bb954cb.jpg" alt=""></li>
             </ul>
             <p class="controller">
-                <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 --> <span class="prev">&lang;</span> <span
+                &lt;!&ndash; &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 &ndash;&gt; <span class="prev">&lang;</span> <span
                     class="next">&rang;</span>
             </p>
         </div>
+
         <script>
             let slides = document.querySelector(".slides");
             let slideImg = document.querySelectorAll(".slides li");
@@ -123,11 +109,49 @@
             prev.addEventListener('click', function () { if (currentIdx !== 0) moveSlide(currentIdx - 1); });
             next.addEventListener('click', function () { if (currentIdx !== slideCount - 1) moveSlide(currentIdx + 1); })
         </script>
+    </section>-->
 
+    <section class="conB">
+        <div class="slidebox">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+            <input type="radio" name="slide" id="slide04">
 
+            <ul class="slidelist">
+                <li class="slideitem">
+                    <div>
+                        <label for="slide04" class="left"></label>
+                        <label for="slide02" class="right"></label>
+                        <a>
+                            <img src="img/slide01.jpg">
+                        </a>
+                    </div>
+                </li>
+                <li class="slideitem">
+                    <div>
+                        <label for="slide01" class="left"></label>
+                        <label for="slide03" class="right"></label>
+                        <a><img src="img/slide02.jpg"></a>
+                    </div>
+                </li>
+                <li class="slideitem">
+                    <div>
+                        <label for="slide02" class="left"></label>
+                        <label for="slide04" class="right"></label>
+                        <a><img src="img/slide03.jpg"></a>
+                    </div>
+                </li>
+                <li class="slideitem">
+                    <div>
+                        <label for="slide03" class="left"></label>
+                        <label for="slide01" class="right"></label>
+                        <a><img src="img/slide04.jpg"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
-
-
 
     <section class="conC"></section>
 
