@@ -9,11 +9,20 @@
     <link rel="stylesheet" href="/webproject/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <script>
     $(function () {
         $(".headC").click(function () {
             $(".headB").slideToggle();
+        });
+    });
+    $(function () {
+        $(".bodynav_b").click(function () {
+            $(".bodynav_c").slideToggle();
         });
     });
 </script>
@@ -22,48 +31,50 @@
     <header>
         <div class="container">
             <div class="container-small">
-                <button type="button" class="headC">
-                    <span class="fa fa-bars" title="menu"></span>
-                </button>
                 <nav class="headA">
                     <ul>
                         <li><a href="#">Facebook</a></li>
                         <li><a href="#">Instagram</a></li>
                     </ul>
                 </nav>
-
-                <nav class="headB">
-                    <ul>
-                        <li><a href="#">로그인</a></li>
-                        <li><a href="#">회원가입</a></li>
-                        <li><a href="#">장바구니</a></li>
-                        <li><a href="#">구매내역</a></li>
-                        <li><a href="#">고객센터</a></li>
-                    </ul>
-                </nav>
+                <button type="button" class="headC">
+                    <span class="fa fa-bars" title="menu"></span>
+                </button>
             </div>
+            <nav class="headB">
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">구매내역</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+        </div>
 
-            <br>
-            <div class="containerhome">
-                <a href="index.html"> ~~Pet</a>
-            </div>
+        <br>
+        <div class="containerHome">
+            <a href="index.html"> ~~Pet</a>
         </div>
     </header>
-    <br><br>
 
-    <section class="conA">
-        <button type="button" class="conA_C">
-            <span class="fa fa-bars" title="menu"></span>
+    <div class="bodynav">
+        <button type="button" class="bodynav_b">
+            <span class="fa fa-bars" title="menu">카테고리</span>
         </button>
-        <nav class="conA">
+        <nav class="bodynav_c">
             <ul>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
+                <div><a href="#">신상품</a></div>
+                <div><a href="#">장난감</a></div>
+                <div><a href="#">간식</a></div>
+                <div><a href="#">패션</a></div>
+                <div><a href="#">산책&middot;외출</a></div>
+                <div><a href="#">목욕&middot;위생</a></div>
             </ul>
         </nav>
+    </div>
+
+    <section class="conA">
     </section>
 
 
@@ -81,17 +92,17 @@
             </p>
         </div>
         <script>
-            let slides = document.querySelector(".slides"); 
-            let slideImg = document.querySelectorAll(".slides li"); 
-            currentIdx = 0; slideCount = slideImg.length; 
-            prev = document.querySelector(".prev"); 
-            next = document.querySelector(".next"); 
-            slideWidth = 384; slideMargin = 50; 
-            slides.style.width = (slideWidth + slideMargin)*slideCount + "px"; 
-            function moveSlide(num){ slides.style.left = -num * 400 + "px"; currentIdx = num; } 
-            prev.addEventListener('click', function(){if(currentIdx !== 0) moveSlide(currentIdx - 1); }); 
-            next.addEventListener('click', function(){if(currentIdx !== slideCount - 1) moveSlide(currentIdx + 1); })
-
+            let slides = document.querySelector(".slides");
+            let slideImg = document.querySelectorAll(".slides li");
+            let currentIdx = 0;
+            let slideCount = slideImg.length;
+            prev = document.querySelector(".prev");
+            next = document.querySelector(".next");
+            slideWidth = 384; slideMargin = 50;
+            slides.style.width = (slideWidth + slideMargin) * slideCount + "px";
+            function moveSlide(num) { slides.style.left = -num * 400 + "px"; currentIdx = num; }
+            prev.addEventListener('click', function () { if (currentIdx !== 0) moveSlide(currentIdx - 1); });
+            next.addEventListener('click', function () { if (currentIdx !== slideCount - 1) moveSlide(currentIdx + 1); })
         </script>
 
 
