@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>회원가입</h3>
+    <form action="">
+        <fieldset>
+            <ul>
+                <li><label for="name">이름
+                        <input type="text" name="user_name" id="name" autofocus>
+                    </label>
+                </li>
+
+                <li><label for="birthday">생년월일
+                        <input type="datetime" name="birthday" id="birthday" placeholder="생년월일(10001122)형식" pattern="[0-9]{8}">
+                    </label>
+                </li>
+
+                <li><label for="user_id">
+                        아이디
+                        <input type="text" name="user_id" id="user_id" value="">
+                    </label>
+                </li>
+
+                <li> <label for="user_pw">
+                        비밀번호
+                        <input type="password" name="user_pw" id="user_pw" required placeholder="영어대소문자숫자,8~12"
+                            pattern="[a-zA-Z0-9]{8, 12}">
+                    </label>
+                </li>
+
+                <li><label for="user_tel">
+                        핸드폰번호
+                        <input type="tel" name="user_tel" id="user_tel" placeholder="000-0000-0000"
+                            pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}" title="전화번호는 3-(3~4)-4형식이어야합니다.">
+                    </label>
+                </li>
+
+                <li><label for="user_email">
+                        e-mail
+                        <input type="email" name="user_email" id="user_email" placeholder="xxx@xxxxx.xxx" pattern="[a-zA-Z0-9]@[a-zA-Z0-9].[a-zA-Z0-9]{3}" title="a@naver.com">
+                    </label>
+                </li>
+
+                <li><label for="user_addr">
+                        주소
+                        <input type="text" name="user_addr" id="user_addr">
+                    </label>
+                </li>
+
+            </ul>
+        </fieldset>
+        <div>
+            <input type="submit" value="회원가입">
+            <input type="reset" value="취소">
+        </div>
+
+    </form>
+</body>
+
+</html>
