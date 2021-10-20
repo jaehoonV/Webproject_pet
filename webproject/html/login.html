@@ -9,21 +9,40 @@
 </head>
 
 <body>
-    <form action="get">
+    <form action="" method="get" name="loginForm">
         <fieldset>
             <h2>LOGIN</h2>
             <h5>Welcome!</h5>
         </div>
         <div class="login_form">
-            <label for="user_id">ID <input type="text" name="user_id" id="user_id" size="12" value=""></label>
-            <label for="user_pw">PW <input type="password" name="user_pw" id="user_pw" required placeholder="영어대소문자숫자,8~12" pattern="[a-z]{8, 12}"></label>
+            <label for="id">ID <input type="text" name="id" id="id" size="12" value=""></label>
+            <label for="password">PW <input type="password" name="password" id="password" required placeholder="영어대소문자숫자,8~12" pattern="[a-z]{8, 12}"></label>
 
         </div>
-        <div>
-            <a href="#" id="login_button">LOGIN</a>
-        </div>
+            <input type="button" onclick="login()" value="로그인">
         </fieldset>
     </form>
+
+    <script>
+        function login() {
+            var id = document.getElementById("id");
+
+            var password = document.getElementById("password");
+
+            //form validation
+            if (id.value == "" || id.value == null) {
+                alert("아이디 항목은 필수 입력값입니다.")
+                id.focus();
+                return false;
+            }
+
+            if (password.value == "" || password.value == null) {
+                alert("패스워드 항목은 필수 입력값입니다.")
+                password.focus();
+                return false;
+            }
+        }
+    </script>
 </body>
 
 </html>
