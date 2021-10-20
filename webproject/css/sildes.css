@@ -28,7 +28,7 @@ ul, li {list-style:none;}
 label.left {
     left:20px;
     background-color:#5F5F5F;
-    background-image:url('../img/left-arrow.png');
+    background-image:url('../images/conA/left-arrow.png');
     background-position:center center;
     background-size:50%;
     background-repeat:no-repeat;
@@ -36,7 +36,7 @@ label.left {
 label.right {
     right:20px;
     background-color:#5F5F5F;
-    background-image:url('../img/right-arrow.png');
+    background-image:url('../images/conA/right-arrow.png');
     background-position:center center;
     background-size:50%;
     background-repeat:no-repeat;
