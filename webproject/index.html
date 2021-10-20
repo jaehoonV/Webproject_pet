@@ -8,14 +8,21 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sildes.css">
+    <link rel="stylesheet" href="css/Swiper.css">
+
+    <!-- icon(insta,face,menu bar) -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- nanum gothic -->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/sildes.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -63,7 +70,8 @@
 
         <br>
         <div class="containerHome">
-            <a href="index.html"><img src="images/containerHome/pretzelspet.png" alt="" style="max-width: 70%; height: auto;"></a></a>
+            <a href="index.html"><img src="images/containerHome/pretzelspet.png" alt=""
+                    style="max-width: 70%; height: auto;"></a></a>
         </div>
     </header>
 
@@ -143,48 +151,129 @@
 
     <section class="conB">
         <p>신상품</p>
-        <div id="slideShow">
-
-            <ul class="slides">
-                <li><img src="images/conB/2f82cbfaf056dd48ac0babd6386ff29b.jpg" alt=""></li>
-                <li><img src="images/conB/8c02e57f32478f3c8a66cb381ff64fde.jpg" alt=""></li>
-                <li><img src="images/conB/d7189fd4961c32d201a793c2ac9f4a1e.jpg" alt=""></li>
-                <li><img src="images/conB/f8651cb0160703c28d3cb6061bb954cb.jpg" alt=""></li>
-            </ul>
-            <p class="controller">
-                <span class="prev">&lang;</span>
-                <span class="next">&rang;</span>
-            </p>
+         <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/conB/1마쉬멜로우 니트.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conB/2양면 패딩.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conB/3쉬오트 베베.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conB/4체크 카라.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conB/5미피 맨투맨.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conB/6체커보드.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conB/7진주 하트빕.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conB/8마카롱 토이.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conB/9리퍼시블 패딩.jpg" alt=""></div>
         </div>
-
-        <script>
-            let slides = document.querySelector(".slides");
-            let slideImg = document.querySelectorAll(".slides li");
-            let currentIdx = 0;
-            let slideCount = slideImg.length;
-            prev = document.querySelector(".prev");
-            next = document.querySelector(".next");
-            slideWidth = 384; slideMargin = 50;
-            slides.style.width = (slideWidth + slideMargin) * slideCount + "px";
-            function moveSlide(num) { slides.style.left = -num * 460 + "px"; currentIdx = num; }
-            prev.addEventListener('click', function () { if (currentIdx !== 0) moveSlide(currentIdx - 1); });
-            next.addEventListener('click', function () { if (currentIdx !== slideCount - 1) moveSlide(currentIdx + 1); })
-        </script>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+    </section>
+    
+    <section class="conC">
+        <p>신나는 장난감</p>
+         <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/conC/1토이 젖병.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conC/2딩독 꼬아보개.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conC/3크로와상 장난감.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conC/4까먹는 고구마.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conC/5한라봉 토이.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conC/6진저쿠키 토이.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conC/7곰돌이 친구.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conC/8터그놀이장난감.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/conC/9달팽이 장난감.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
     </section>
 
-    <section class="conC"></section>
+    <section class="conD">
+        <p>베스트 패션</p>
+        <!-- Swiper -->
+   <div class="swiper mySwiper">
+       <div class="swiper-wrapper">
+         <div class="swiper-slide"><img src="images/conD/1니트 가디건.jpg" alt=""></div>
+         <div class="swiper-slide"><img src="images/conD/2캔디 스트라이프티.jpg" alt=""></div>
+         <div class="swiper-slide"><img src="images/conD/3쓰담 베스트.jpg" alt=""></div>
+         <div class="swiper-slide"><img src="images/conD/4빈티지 워싱 패딩.jpg" alt=""></div>
+         <div class="swiper-slide"><img src="images/conD/5체커보드 티셔츠.jpg" alt=""></div>
+         <div class="swiper-slide"><img src="images/conD/6스트라이프 맨투맨.jpg" alt=""></div>
+         <div class="swiper-slide"><img src="images/conD/7꽈배기 가디건.jpg" alt=""></div>
+         <div class="swiper-slide"><img src="images/conD/8팡팡 포켓 슈트.jpeg" alt=""></div>
+         <div class="swiper-slide"><img src="images/conD/9사과 가디건.jpg" alt=""></div>
+       </div>
+       <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-pagination"></div>
+     </div>
+     <!-- Initialize Swiper -->
+     <script>
+       var swiper = new Swiper(".mySwiper", {
+         slidesPerView: 3,
+         spaceBetween: 30,
+         slidesPerGroup: 3,
+         loop: true,
+         loopFillGroupWithBlank: true,
+         pagination: {
+           el: ".swiper-pagination",
+           clickable: true,
+         },
+         navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+         },
+       });
+     </script>
+    </section>
 
 
-    <section class="conD"></section>
+    <section class="conE"></section>
 
 
     <section class="conF"></section>
 
 
     <section class="conG"></section>
-
-
-    <section class="conH"></section>
 
     <footer></footer>
 </body>
