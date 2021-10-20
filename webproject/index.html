@@ -8,13 +8,14 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/sildes.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -47,8 +48,12 @@
             </div>
             <nav class="headB">
                 <ul>
-                    <li><a href="html/login.html" onclick="window.open(this.href, '_blank', 'top=300, left=800, width=450px,height=300px,toolbars=no,scrollbars=no'); return false;">로그인</a></li>
-                    <li><a href="html/create_account.html" onclick="window.open(this.href, '_blank', 'top=300, left=800, width=300px,height=350px,toolbars=no,scrollbars=no'); return false;">회원가입</a></li>
+                    <li><a href="html/login.html"
+                            onclick="window.open(this.href, '_blank', 'top=300, left=800, width=450px,height=300px,toolbars=no,scrollbars=no'); return false;">로그인</a>
+                    </li>
+                    <li><a href="html/create_account.html"
+                            onclick="window.open(this.href, '_blank', 'top=300, left=800, width=300px,height=350px,toolbars=no,scrollbars=no'); return false;">회원가입</a>
+                    </li>
                     <li><a href="#">장바구니</a></li>
                     <li><a href="#">구매내역</a></li>
                     <li><a href="#">고객센터</a></li>
@@ -58,7 +63,7 @@
 
         <br>
         <div class="containerHome">
-            <a href="index.html"> ~~Pet</a>
+            <a href="index.html"><img src="images/containerHome/pretzelspet.png" alt="" style="max-width: 70%; height: auto;"></a></a>
         </div>
     </header>
 
@@ -139,7 +144,7 @@
     <section class="conB">
         <p>신상품</p>
         <div id="slideShow">
-            
+
             <ul class="slides">
                 <li><img src="images/conB/2f82cbfaf056dd48ac0babd6386ff29b.jpg" alt=""></li>
                 <li><img src="images/conB/8c02e57f32478f3c8a66cb381ff64fde.jpg" alt=""></li>
@@ -147,7 +152,7 @@
                 <li><img src="images/conB/f8651cb0160703c28d3cb6061bb954cb.jpg" alt=""></li>
             </ul>
             <p class="controller">
-                <span class="prev">&lang;</span> 
+                <span class="prev">&lang;</span>
                 <span class="next">&rang;</span>
             </p>
         </div>
@@ -161,7 +166,7 @@
             next = document.querySelector(".next");
             slideWidth = 384; slideMargin = 50;
             slides.style.width = (slideWidth + slideMargin) * slideCount + "px";
-            function moveSlide(num) { slides.style.left = -num * 400 + "px"; currentIdx = num; }
+            function moveSlide(num) { slides.style.left = -num * 460 + "px"; currentIdx = num; }
             prev.addEventListener('click', function () { if (currentIdx !== 0) moveSlide(currentIdx - 1); });
             next.addEventListener('click', function () { if (currentIdx !== slideCount - 1) moveSlide(currentIdx + 1); })
         </script>

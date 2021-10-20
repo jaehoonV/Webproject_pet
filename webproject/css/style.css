@@ -56,7 +56,7 @@ body{
 
 .containerHome{
     background-color: var(--color1);
-    padding: 5%;
+    padding: 1%;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -77,7 +77,7 @@ body{
     background-color: var(--color1);
 }
 .conB .slides img{
-    width: 200px;
+    width: 210px;
 }
 .conB p{
     text-align: center;
@@ -103,11 +103,9 @@ body{
         margin-left: auto;
         margin-right: auto;
     }
-
     .headA ul{
         display: flex;
     }
-    
     .headB ul{
         display: flex;
     }
@@ -129,23 +127,18 @@ body{
         margin-right: auto;
         
     }
-
     .bodynav_c ul{
         display: flex;
         align-items: center;
         text-align: center; 
     }
-
     .bodynav_c div{
         width: 150px;
         text-align: center;
     }
-    
-
     .bodynav_c a{
         font-size: 14px;
     }
-
     .bodynav_b{
         display: none;
     }
@@ -154,6 +147,7 @@ body{
         display: block;
         align-items: center;
         max-width: 1000px;
+        height: 300px;
         margin-left: auto;
         margin-right: auto;
         
@@ -167,7 +161,6 @@ body{
         align-items: center;
         justify-content: space-between;
     }
-
     .headB{
         display: none;
     }
@@ -213,7 +206,7 @@ body{
 
 /* 보여줄 구간의 높이와 넓이 설정 */ 
 .conB #slideShow{width: 1000px; height: 200px; position: relative; margin: 10px; overflow: hidden; }
-.conB .slides{position: absolute; left: 0; top: 0; width: 2500px; padding: 0; transition: left 0.5s ease-out;} 
+.conB .slides{position: absolute; left: 0; top: 0;  padding: 0; transition: left 0.5s ease-out;} 
 .conB .slides li:first-child{ margin-left: 0px; }
 .conB .slides li:not(:last-child){ float: left; margin-right: 0px; padding-right: 40px; } 
 .conB .slides li{ float: left; } 
