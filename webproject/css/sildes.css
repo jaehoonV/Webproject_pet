@@ -14,7 +14,7 @@ ul, li {list-style:none;}
     display:inline-block;
     vertical-align:middle;
     width:100%;
-    transition:all .35s;
+    transition:all .55s;
 }
 .slidebox .slideitem label {
     position:absolute;
@@ -52,6 +52,8 @@ label.right {
 [id="slide02"]:checked ~ .slidelist .slideitem {transform:translateX(-100%);animation:slide02 20s infinite;}
 [id="slide03"]:checked ~ .slidelist .slideitem {transform:translateX(-200%);animation:slide03 20s infinite;}
 [id="slide04"]:checked ~ .slidelist .slideitem {transform:translateX(-300%);animation:slide04 20s infinite;}
+[id="slide05"]:checked ~ .slidelist .slideitem {transform:translateX(-400%);animation:slide05 20s infinite;}
+[id="slide06"]:checked ~ .slidelist .slideitem {transform:translateX(-500%);animation:slide06 20s infinite;}
 
 @keyframes slide01 {
     0% {left:0%;}
@@ -87,6 +89,28 @@ label.right {
     100% {left:0%;}
 }
 @keyframes slide04 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:200%;}
+    73% {left:200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+}
+@keyframes slide05 {
+    0% {left:0%;}
+    23% {left:0%;}
+    25% {left:-100%;}
+    48% {left:-100%;}
+    50% {left:200%;}
+    73% {left:200%;}
+    75% {left:100%;}
+    98% {left:100%;}
+    100% {left:0%;}
+}
+@keyframes slide06 {
     0% {left:0%;}
     23% {left:0%;}
     25% {left:300%;}

@@ -9,21 +9,47 @@
 </head>
 
 <body>
-    <form action="get">
+    <form action="http://localhost/login" method="get" name="loginForm">
         <fieldset>
             <h2>LOGIN</h2>
             <h5>Welcome!</h5>
         </div>
         <div class="login_form">
-            <label for="user_id">ID <input type="text" name="user_id" id="user_id" size="12" value=""></label>
-            <label for="user_pw">PW <input type="password" name="user_pw" id="user_pw" required placeholder="영어대소문자숫자,8~12" pattern="[a-z]{8, 12}"></label>
+            <label for="id">ID <input type="text" name="id" id="id" size="12" value=""></label><br>
+            <label for="password">PW <input type="password" name="password" id="password" required placeholder="영어대소문자숫자,8~12"></label>
 
         </div>
-        <div>
-            <a href="#" id="login_button">LOGIN</a>
-        </div>
+            <input type="button" onclick="login()" value="로그인">
+            <a href="create_account.html"><input type="button" onclick="" value="회원가입"></a>
         </fieldset>
     </form>
+
+    <script>
+        function login() {
+            var id = document.getElementById("id");
+
+            var password = document.getElementById("password");
+
+            //form validation
+            if (id.value == "" || id.value == null) {
+                alert("아이디 항목은 필수 입력값입니다.")
+                id.focus();
+                return false;
+            }
+
+            if (password.value == "" || password.value == null) {
+                alert("패스워드 항목은 필수 입력값입니다.")
+                password.focus();
+                return false;
+            }
+
+            if(password.value.length < 8 || password.value.length >12){
+                alert("패스워드는 8~12자로 입력해주세요.")
+                password.focus();
+                return;
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -3,9 +3,9 @@
 :root {
     --main-color: #F2E5E4;
     --text-dark-color: #262522;
-    --text-color1: #f2935c;
-    --text-color2: #bf9780;
-    --text-color2: #f26457;
+    --color1: #f2935c;
+    --color2: #bf9780;
+    --color3: #f26457;
     --large-width: 1000px;
 }
 
@@ -55,8 +55,9 @@ body{
 }
 
 .containerHome{
-    background-color: tomato;
+    background-color: var(--color1);
     padding: 5%;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -72,9 +73,18 @@ body{
     font-size: 8px;
     text-decoration: none;
 }
-
+.conB {
+    background-color: var(--color1);
+}
 .conB .slides img{
     width: 200px;
+}
+.conB p{
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    
 }
 
 /* 큰 화면 */
@@ -139,6 +149,15 @@ body{
     .bodynav_b{
         display: none;
     }
+
+    .conB{
+        display: block;
+        align-items: center;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
 }
 
 /* 작은 화면 */
@@ -193,7 +212,7 @@ body{
 } 
 
 /* 보여줄 구간의 높이와 넓이 설정 */ 
-.conB #slideShow{width: 1000px; height: 200px; position: relative; margin: 30px; overflow: hidden; }
+.conB #slideShow{width: 1000px; height: 200px; position: relative; margin: 10px; overflow: hidden; }
 .conB .slides{position: absolute; left: 0; top: 0; width: 2500px; padding: 0; transition: left 0.5s ease-out;} 
 .conB .slides li:first-child{ margin-left: 0px; }
 .conB .slides li:not(:last-child){ float: left; margin-right: 0px; padding-right: 40px; } 
