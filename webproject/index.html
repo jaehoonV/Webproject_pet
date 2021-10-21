@@ -33,8 +33,9 @@
         });
     });
     $(function () {
+        $(".bodynav_c").hide();
         $(".bodynav_b").click(function () {
-            $(".bodynav_c").slideToggle();
+            $(".bodynav_c").animate({width:"toggle"},600);
         });
     });
 </script>
@@ -47,6 +48,7 @@
                     <ul>
                         <li><a href="#"><i class="fab fa-facebook-square fa-3x"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter fa-3x"></i></a></li>
                     </ul>
                 </nav>
                 <button type="button" class="headC">
@@ -67,8 +69,6 @@
                 </ul>
             </nav>
         </div>
-
-        <br>
         <div class="containerHome">
             <a href="index.html"><img src="images/containerHome/pretzelspet.png" alt=""
                     style="max-width: 70%; height: auto;"></a></a>
