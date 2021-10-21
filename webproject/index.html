@@ -16,13 +16,12 @@
         integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!-- nanum gothic -->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    
+
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -35,7 +34,7 @@
     $(function () {
         $(".bodynav_c").hide();
         $(".bodynav_b").click(function () {
-            $(".bodynav_c").animate({width:"toggle"},600);
+            $(".bodynav_c").animate({ width: "toggle" }, 600);
         });
     });
 </script>
@@ -151,129 +150,243 @@
 
     <section class="conB">
         <p>신상품</p>
-         <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="images/conB/1마쉬멜로우 니트.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conB/2양면 패딩.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conB/3쉬오트 베베.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conB/4체크 카라.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conB/5미피 맨투맨.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conB/6체커보드.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conB/7진주 하트빕.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conB/8마카롱 토이.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conB/9리퍼시블 패딩.jpg" alt=""></div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper_B">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/conB/1마쉬멜로우 니트.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conB/2양면 패딩.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conB/3쉬오트 베베.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conB/4체크 카라.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conB/5미피 맨투맨.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conB/6체커보드.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conB/7진주 하트빕.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conB/8마카롱 토이.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conB/9리퍼시블 패딩.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          slidesPerGroup: 3,
-          loop: true,
-          loopFillGroupWithBlank: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper_B", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        slidesPerGroup: 3,
+                    },
+                }
+            });
+        </script>
     </section>
-    
+
     <section class="conC">
         <p>신나는 장난감</p>
-         <!-- Swiper -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="images/conC/1토이 젖병.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conC/2딩독 꼬아보개.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conC/3크로와상 장난감.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conC/4까먹는 고구마.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conC/5한라봉 토이.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conC/6진저쿠키 토이.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conC/7곰돌이 친구.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conC/8터그놀이장난감.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="images/conC/9달팽이 장난감.jpg" alt=""></div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper_C">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/conC/1토이 젖병.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conC/2딩독 꼬아보개.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conC/3크로와상 장난감.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conC/4까먹는 고구마.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conC/5한라봉 토이.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conC/6진저쿠키 토이.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conC/7곰돌이 친구.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conC/8터그놀이장난감.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conC/9달팽이 장난감.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          slidesPerGroup: 3,
-          loop: true,
-          loopFillGroupWithBlank: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper_C", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        slidesPerGroup: 3,
+                    },
+                }
+            });
+        </script>
     </section>
 
     <section class="conD">
         <p>베스트 패션</p>
         <!-- Swiper -->
-   <div class="swiper mySwiper">
-       <div class="swiper-wrapper">
-         <div class="swiper-slide"><img src="images/conD/1니트 가디건.jpg" alt=""></div>
-         <div class="swiper-slide"><img src="images/conD/2캔디 스트라이프티.jpg" alt=""></div>
-         <div class="swiper-slide"><img src="images/conD/3쓰담 베스트.jpg" alt=""></div>
-         <div class="swiper-slide"><img src="images/conD/4빈티지 워싱 패딩.jpg" alt=""></div>
-         <div class="swiper-slide"><img src="images/conD/5체커보드 티셔츠.jpg" alt=""></div>
-         <div class="swiper-slide"><img src="images/conD/6스트라이프 맨투맨.jpg" alt=""></div>
-         <div class="swiper-slide"><img src="images/conD/7꽈배기 가디건.jpg" alt=""></div>
-         <div class="swiper-slide"><img src="images/conD/8팡팡 포켓 슈트.jpeg" alt=""></div>
-         <div class="swiper-slide"><img src="images/conD/9사과 가디건.jpg" alt=""></div>
-       </div>
-       <div class="swiper-button-next"></div>
-       <div class="swiper-button-prev"></div>
-       <div class="swiper-pagination"></div>
-     </div>
-     <!-- Initialize Swiper -->
-     <script>
-       var swiper = new Swiper(".mySwiper", {
-         slidesPerView: 3,
-         spaceBetween: 30,
-         slidesPerGroup: 3,
-         loop: true,
-         loopFillGroupWithBlank: true,
-         pagination: {
-           el: ".swiper-pagination",
-           clickable: true,
-         },
-         navigation: {
-           nextEl: ".swiper-button-next",
-           prevEl: ".swiper-button-prev",
-         },
-       });
-     </script>
+        <div class="swiper mySwiper_D">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/conD/1니트 가디건.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conD/2캔디 스트라이프티.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conD/3쓰담 베스트.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conD/4빈티지 워싱 패딩.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conD/5체커보드 티셔츠.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conD/6스트라이프 맨투맨.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conD/7꽈배기 가디건.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conD/8팡팡 포켓 슈트.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conD/9사과 가디건.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper_D", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        slidesPerGroup: 3,
+                    },
+                }
+            });
+        </script>
     </section>
 
+    <section class="conE">
+        <p>산책 용품</p>
+        <!-- Swiper -->
+        <div class="swiper mySwiper_E">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/conE/1휴대용 간식통.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conE/2진드기 패치.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conE/3H 하네스.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conE/4로마크 팬던트.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conE/5카시트 세트.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conE/6아더 하네스.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conE/7목줄리드줄.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conE/8솔잎 펫백.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conE/9스탠다드 리쉬.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper_E", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        slidesPerGroup: 3,
+                    },
+                }
+            });
+        </script>
+    </section>
 
-    <section class="conE"></section>
+    <section class="conF">
+        <p>가을에 어울리는 오렌지 컬러</p>
+        <!-- Swiper -->
+        <div class="swiper mySwiper_F">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/conF/1원마일웨어.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conF/2컬러풀 목줄 오렌지.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conF/3워킹수트.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conF/4코튼 티셔츠.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conF/5멀로 아더 리쉬.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conF/6베이직 터틀넥.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conF/7마니아 니트.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conF/8빅스트라이프.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/conF/9마카롱 토이.jpg" alt=""></div>
 
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper_F", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        slidesPerGroup: 3,
+                    },
+                }
+            });
+        </script>
+    </section>
 
-    <section class="conF"></section>
+    <div id="scroll_up" onclick="up()"><i class="fa fa-angle-up fa-3x" aria-hidden="true"></i></div>
 
-
-    <section class="conG"></section>
+    <script>
+        function up() {
+            window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+        }
+    </script>
+    <br><br><br><br><br><br><br>
 
     <footer></footer>
 </body>

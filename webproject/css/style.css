@@ -90,20 +90,36 @@ body{
     background-color: var(--color3);
     margin-left: 5px;
 }
-.conB, .conC, .conD, .conE {
+.conB, .conC, .conD, .conE, .conF {
     background-color: var(--color1);
     margin-top: 10px;
     border-radius: 5px;
 }
-.conB .slides img, .conC .slides img, .conD .slides img{
+.conB .slides img, .conC .slides img, .conD .slides img, .conE .slides img, .conF .slides img{
     width: 210px;
 }
-.conB p, .conC p, .conD p{
+.conB p, .conC p, .conD p, .conE p, .conF p{
     text-align: center;
     padding-bottom: 30px;
     font-size: 1.7rem;
-    
 }
+
+#scroll_up {
+    position: fixed;
+    bottom: 100px;
+    left: 2%;
+    z-index: 99;
+    width: 42px;
+    height: 42px;
+    background-color: var(--text-dark-color);
+    color: var(--main-color);
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /* 큰 화면 */
 @media (min-width: 768px) {
@@ -146,7 +162,7 @@ body{
         margin-bottom: 5px;
         position: sticky;
         top: 0;
-        z-index: 100;
+        z-index: 99;
         background-color: var(--color1);
         border-radius: 5px;
         padding: 5px;
@@ -174,7 +190,7 @@ body{
     .bodynav_c a{
         font-size: 14px;
     }
-    .conB, .conC, .conD, .conE {
+    .conB, .conC, .conD, .conE, .conF {
         display: block;
         align-items: center;
         max-width: 1000px;
@@ -222,7 +238,14 @@ body{
         text-align: center;
         margin: 2px;
     }
-
+    .conB, .conC, .conD, .conE, .conF{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .conB img, .conC img, .conD img, .conE img, .conF img{
+        padding: 10px;
+    }
 }
 
 
