@@ -23,7 +23,7 @@
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -169,7 +169,8 @@
                         <li><strong>울트라 초경량 양면 패딩베스트</strong></li>
                         <li>35900원</li>
                         <li><br><br></li>
-                    </ul></div>
+                    </ul>
+                </div>
                 <div class="swiper-slide">
                     <img src="images/conB/3쉬오트 베베.jpg" alt="">
                     <ul>
@@ -590,15 +591,78 @@
         <!-- Swiper -->
         <div class="swiper mySwiper_F">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/conF/1원마일웨어.jpeg" alt=""></div>
-                <div class="swiper-slide"><img src="images/conF/2컬러풀 목줄 오렌지.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/conF/3워킹수트.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/conF/4코튼 티셔츠.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/conF/5멀로 아더 리쉬.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/conF/6베이직 터틀넥.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/conF/7마니아 니트.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/conF/8빅스트라이프.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/conF/9마카롱 토이.jpg" alt=""></div>
+                <div class="swiper-slide">
+                    <img src="images/conF/1원마일웨어.jpeg" alt="">
+                    <ul>
+                        <li><strong>원마일웨어-오렌지</strong></li>
+                        <li>39900원</li>
+                        <li><br><br></li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/conF/2컬러풀 목줄 오렌지.jpg" alt="">
+                    <ul>
+                        <li><strong>컬러풀 목줄-오렌지</strong></li>
+                        <li>29000원</li>
+                        <li><br><br></li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/conF/3워킹수트.jpg" alt="">
+                    <ul>
+                        <li><strong>하울팟 워킹수트 라이트</strong></li>
+                        <li>48000원</li>
+                        <li><br><br></li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/conF/4코튼 티셔츠.jpg" alt="">
+                    <ul>
+                        <li><strong>수피마 코튼 티셔츠</strong></li>
+                        <li>24000원</li>
+                        <li><br><br></li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/conF/5멀로 아더 리쉬.jpg" alt="">
+                    <ul>
+                        <li><strong>멀로 아더 리쉬</strong></li>
+                        <li>39000원</li>
+                        <li><br><br></li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/conF/6베이직 터틀넥.jpg" alt="">
+                    <ul>
+                        <li><strong>베이직 터틀넥-오렌지</strong></li>
+                        <li>27000원</li>
+                        <li><br><br></li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/conF/7마니아 니트.jpg" alt="">
+                    <ul>
+                        <li><strong>바나나 마니아 니트</strong></li>
+                        <li>34000원</li>
+                        <li><br><br></li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/conF/8빅스트라이프.jpg" alt="">
+                    <ul>
+                        <li><strong>빅 스트라이프 올인원</strong></li>
+                        <li>34000원</li>
+                        <li><br><br></li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/conF/9마카롱 토이.jpg" alt="">
+                    <ul>
+                        <li><strong>마카롱 토이-오렌지</strong></li>
+                        <li>18900원</li>
+                        <li><br><br></li>
+                    </ul>
+                </div>
 
             </div>
             <div class="swiper-button-next"></div>
@@ -632,22 +696,15 @@
         </script>
     </section>
 
-
-    <section class="conE"></section>
-
-
-    <section class="conF"></section>
+    <div id="scroll_up" onclick="up()"><i class="fa fa-angle-up fa-3x" aria-hidden="true"></i></div>
 
     <script>
         function up() {
             window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
         }
     </script>
-    <br><br><br><br><br><br><br>
 
-
-    <section class="conH"></section>
-
+    <br>
 
     <footer class="footerMain">
         <div class="footerHusks">
@@ -659,69 +716,75 @@
                 </colgroup>
                 <thead>
                     <tr>
-                        <th class="footerTitle"><h4>고객만족센터</h4></th>
-                        <th class="footerTitle"><h4>입금계좌 정보</h4></th>
-                        <th class="footerTitle"><h4>프리첼스 펫</h4></th>
+                        <th class="footerTitle">
+                            <h4>고객만족센터</h4>
+                        </th>
+                        <th class="footerTitle">
+                            <h4>입금계좌 정보</h4>
+                        </th>
+                        <th class="footerTitle">
+                            <h4>프리첼스 펫</h4>
+                        </th>
                     </tr>
                 </thead>
 
                 <tbody>
-                <tr>
-                    <td>
-                        <div>
-                            <p class="homePagePhoneNumber"><i class="fas fa-phone-volume iconInterval"></i>02-545-8221</p>
-                            <p class="homePageBusinessHours">
-                                <strong class="homePageBusinessHoursInterval">10:00-17:00, 주말, 공휴일 휴무 <br> 12:00-13:00, 점심 시간 </strong>
-                            </p>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <div class="account">
-                                <p style="padding-top: 10px;"><strong>우리</strong>1002-743-218249</p>
-                                <p style="padding-top: 7px;"><strong><b>예금주</b></strong><b>이재훈</b></p>
+                    <tr>
+                        <td>
+                            <div>
+                                <p class="homePagePhoneNumber"><i
+                                        class="fas fa-phone-volume iconInterval"></i>02-545-8221</p>
+                                <p class="homePageBusinessHours">
+                                    <strong class="homePageBusinessHoursInterval">10:00-17:00, 주말, 공휴일 휴무 <br>
+                                        12:00-13:00, 점심 시간 </strong>
+                                </p>
                             </div>
-                            <p class="inputs">
-                                <span class="inputSelect" style="width:147px; height:30px;">
-                                    <select onchange="window.open(this.value,'bank','')">
-                                        <option selected="">인터넷뱅킹 바로가기</option>
-                                        <option value="http://www.kbstar.com"> 국민은행 </option>
-                                        <option value="http://www.scfirstbank.com"> 제일은행 </option>
-                                        <option value="http://www.wooribank.com"> 우리은행 </option>
-                                        <option value="http://www.kiupbank.co.kr"> 기업은행 </option>
-                                        <option value="http://www.kjbank.com"> 광주은행 </option>
-                                        <option value="http://www.daegubank.co.kr"> 대구은행 </option>
-                                        <option value="http://www.hanabank.com"> 하나은행 </option>
-                                        <option value="http://www.shinhan.com"> 신한은행 </option>
-                                        <option value="http://www.keb.co.kr"> 외환은행 </option>
-                                        <option value="http://www.jbbank.co.kr"> 전북은행 </option>
-                                        <option value="http://www.pusanbank.co.kr"> 부산은행 </option>
-                                        <option value="http://www.chb.co.kr"> 조흥은행 </option>
-                                        <option value="http://www.goodbank.com"> 한미은행 </option>
-                                        <option value="http://www.chejubank.co.kr"> 제주은행 </option>
-                                        <option value="http://www.kyongnambank.co.kr"> 경남은행</option>
-                                        <option value="http://www.epostbank.go.kr"> 우체국 </option>
-                                        <option value="http://banking.nonghyup.com"> 농협 </option>
-                                    </select>
-                            </p>
-                        </div>
-                    </td>
+                        </td>
+                        <td>
+                            <div>
+                                <div class="account">
+                                    <p style="padding-top: 10px;"><strong>농협</strong>352-0908-1817-23</p>
+                                    <p style="padding-top: 7px;"><strong><b>예금주</b></strong><b>이재훈</b></p>
+                                </div>
+                                <p class="inputs">
+                                    <span class="inputSelect" style="width:147px; height:30px;">
+                                        <select onchange="window.open(this.value,'bank','')">
+                                            <option selected="">인터넷뱅킹 바로가기 <i class="fa fa-angle-up fa-1x" aria-hidden="true"></i></option>
+                                            <option value="http://www.kbstar.com"> 국민은행 </option>
+                                            <option value="http://www.scfirstbank.com"> 제일은행 </option>
+                                            <option value="http://www.wooribank.com"> 우리은행 </option>
+                                            <option value="http://www.kiupbank.co.kr"> 기업은행 </option>
+                                            <option value="http://www.kjbank.com"> 광주은행 </option>
+                                            <option value="http://www.daegubank.co.kr"> 대구은행 </option>
+                                            <option value="http://www.hanabank.com"> 하나은행 </option>
+                                            <option value="http://www.shinhan.com"> 신한은행 </option>
+                                            <option value="http://www.keb.co.kr"> 외환은행 </option>
+                                            <option value="http://www.jbbank.co.kr"> 전북은행 </option>
+                                            <option value="http://www.pusanbank.co.kr"> 부산은행 </option>
+                                            <option value="http://www.chb.co.kr"> 조흥은행 </option>
+                                            <option value="http://www.goodbank.com"> 한미은행 </option>
+                                            <option value="http://www.chejubank.co.kr"> 제주은행 </option>
+                                            <option value="http://www.kyongnambank.co.kr"> 경남은행</option>
+                                            <option value="http://www.epostbank.go.kr"> 우체국 </option>
+                                            <option value="http://banking.nonghyup.com"> 농협 </option>
+                                        </select>
+                                </p>
+                            </div>
+                        </td>
 
-                    <td class="lastFooterRight ">
-                        <div class="companyBox">
-                            <p class="maxContent"><strong>의정부 점</strong> 010-6235-7736</p>
-                            <ul>
-                                <li class="maxContent listStyle">경기도 의정부 녹양동 재훈이 집 (처음처럼 지참 필수)</li>
-                                <li>
-                                </li>
-                                <li class="maxContent listStyle">13:00 - 21:00 / Last Mon Off</li>
-                            </ul>
-                        </div>
-                        <br>
-                    </td>
-
-
-                </tr>
+                        <td class="lastFooterRight ">
+                            <div class="companyBox">
+                                <p class="maxContent"><strong>의정부 점</strong> 010-1234-5678</p>
+                                <ul>
+                                    <li class="maxContent listStyle">경기도 의정부 녹양동</li>
+                                    <li>
+                                    </li>
+                                    <li class="maxContent listStyle">13:00 - 21:00 / Last Mon Off</li>
+                                </ul>
+                            </div>
+                            <br>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
 
