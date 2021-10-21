@@ -41,3 +41,17 @@
     color: var(--color2);
     margin-bottom: 70px;
 }
+.pagingStyle .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border: 1px solid #bf9780;
+    opacity: 1;
+}
+.pagingStyle .swiper-pagination-bullet-active {
+    width: 40px;
+    transition: width .5s;
+    border-radius: 5px;
+    background: #bf9780;
+    border: 1px solid transparent;
+}
