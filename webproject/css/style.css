@@ -3,9 +3,9 @@
 :root {
     --main-color: #F2E5E4;
     --text-dark-color: #262522;
-    --color1: #f2935c;
+    --color1: #fbd8c3;
     --color2: #bf9780;
-    --color3: #f26457;
+    --color3: #f3d89f;
     --large-width: 1000px;
 }
 
@@ -87,7 +87,6 @@ body{
 }
 .bodynav_c div{
     border-radius: 10px;
-    background-color: var(--color3);
     margin-left: 5px;
 }
 .conB, .conC, .conD, .conE, .conF {
@@ -104,7 +103,7 @@ body{
 #scroll_up {
     position: fixed;
     bottom: 100px;
-    right: 20%;
+    right: 2%;
     z-index: 99;
     width: 42px;
     height: 42px;
