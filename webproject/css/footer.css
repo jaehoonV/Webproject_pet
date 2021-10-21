@@ -1,0 +1,99 @@
+footer {
+    margin:20px;
+}
+
+.maxContent {
+    width: max-content;
+}
+
+.footerHusks {
+    display: block;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    height: 250px;
+    border-top: 1px solid #adadad;
+    border-bottom: 1px solid #adadad;
+}
+
+.footerTitle {
+    letter-spacing: 0px;
+    padding: 20px 0 15px 0;
+    text-align: left;
+    text-rendering: geometricprecision;
+    font-size: 20px;
+}
+
+.homePagePhoneNumber {
+    font-size: 28px;
+    color: #444;
+    font-weight: bold;
+    position: relative;
+    top: -3px;
+    letter-spacing: 0;
+    margin-bottom: 5px;
+}
+
+.iconInterval {
+    padding-right: 5px;
+}
+
+.account {
+    margin-bottom: 20px;
+}
+
+select {
+    width: 200px;
+    padding: .8em .5em;
+    border: 1px solid #999;
+    font-family: inherit;
+    background: url('../images/footer/selectBoxArrow.jpeg') no-repeat 95% 50%;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.homePageBusinessHours {
+    padding: 8px 0 0 0;
+    /*margin-bottom: 20px;*/
+}
+
+.homePageBusinessHoursInterval {
+    font-size: 12px;
+}
+
+.inputs .inputSelect {
+    margin-top: 22px;
+}
+
+.lastFooterRight {
+    padding-bottom: 15px;
+}
+
+.lastFooterRight .companyBox {
+    width: 31%;
+    float: left;
+}
+
+.companyBox + .companyBox {
+    margin-left: 3%;
+}
+
+.companyBox strong {
+    font-size: 13px;
+    padding-right: 5px;
+}
+
+.companyBox > ul {
+    position: relative;
+    padding-top: 22px;
+}
+
+.companyBox > ul > li + li {
+    margin-top: 5px;
+}
