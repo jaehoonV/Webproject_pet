@@ -16,6 +16,15 @@ footer {
     border-bottom: 1px solid #adadad;
 }
 
+.footerHusks2 {
+    display: block;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    height: 110px;
+    border-bottom: 1px solid #adadad;
+}
+
 .footerTitle {
     letter-spacing: 0px;
     padding: 20px 0 15px 0;
