@@ -104,7 +104,7 @@ body{
 #scroll_up {
     position: fixed;
     bottom: 100px;
-    right: 20%;
+    right: 2%;
     z-index: 99;
     width: 42px;
     height: 42px;
