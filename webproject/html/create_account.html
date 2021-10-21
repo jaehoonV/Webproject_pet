@@ -6,63 +6,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-color: #F2E5E4;
+            --text-dark-color: #262522;
+            --color1: #f2935c;
+            --color2: #bf9780;
+            --color3: #f26457;
+            --large-width: 1000px;
+        }
+
+        body {
+            background-color: var(--main-color);
+            font-style: var(--text-dark-color);
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        /* outline */
+        fieldset {
+            text-align: center;
+            border: 1px solid var(--color2);
+            margin-bottom: 15px;
+        }
+
+        hr {
+            display: block;
+            border: 0;
+            height: 2px;
+            background: var(--color2)
+        }
+
+        .signUp {
+            margin-top: 8px;
+        }
+
+        label {
+            width: 75vw;
+            display: inline-block;
+            margin-left: 10px;
+            margin: 5px;
+            text-align: left;
+        }
+
+        .signUp input {
+            font-size: 11px;
+            width: 135px;
+            height: 15px;
+            float: right;
+            margin-right: 35px;
+        }
+
+        .signUpBtn {
+            text-align: center;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .signUpBtn input {
+            background-color: var(--main-color);
+            border: 1px solid var(--color2);
+            border-radius: 2px;
+            margin: 4px;
+            width: 75px;
+        }
+    </style>
 </head>
 
 <body>
     <h3>회원가입</h3>
-    <form action="">
+    <form action="http://localhost/create_account" method="GET" name="signupForm">
         <fieldset>
-            <ul>
-                <li><label for="name">이름
-                        <input type="text" name="user_name" id="name" autofocus>
-                    </label>
-                </li>
-
-                <li><label for="birthday">생년월일
-                        <input type="datetime" name="birthday" id="birthday" placeholder="생년월일(10001122)형식" pattern="[0-9]{8}">
-                    </label>
-                </li>
-
-                <li><label for="user_id">
-                        아이디
-                        <input type="text" name="user_id" id="user_id" value="">
-                    </label>
-                </li>
-
-                <li> <label for="user_pw">
-                        비밀번호
-                        <input type="password" name="user_pw" id="user_pw" required placeholder="영어대소문자숫자,8~12"
-                            pattern="[a-zA-Z0-9]{8, 12}">
-                    </label>
-                </li>
-
-                <li><label for="user_tel">
-                        핸드폰번호
-                        <input type="tel" name="user_tel" id="user_tel" placeholder="000-0000-0000"
-                            pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}" title="전화번호는 3-(3~4)-4형식이어야합니다.">
-                    </label>
-                </li>
-
-                <li><label for="user_email">
-                        e-mail
-                        <input type="email" name="user_email" id="user_email" placeholder="xxx@xxxxx.xxx" pattern="[a-zA-Z0-9]@[a-zA-Z0-9].[a-zA-Z0-9]{3}" title="a@naver.com">
-                    </label>
-                </li>
-
-                <li><label for="user_addr">
-                        주소
-                        <input type="text" name="user_addr" id="user_addr">
-                    </label>
-                </li>
-
-            </ul>
+            <div class="signUp">
+                <label for="user_id">아이디 <input type="text" name="user_id" id="user_id" value="">
+                </label>
+                <hr>
+                <label for="user_pw">비밀번호 <input type="password" name="user_pw" id="user_pw" required
+                        placeholder="영어대소문자숫자(8~12자)" pattern="[a-zA-Z0-9]{8, 12}">
+                </label>
+                <hr>
+                <label for="name">이름 <input type="text" name="user_name" id="name">
+                </label>
+                <hr>
+                <label for="birthday">생년월일 <input type="datetime" name="birthday" id="birthday" placeholder="19xx.xx.xx"
+                        pattern="[0-9]{4}.[0-9]{2}.[0-9]{2}">
+                </label>
+                <hr>
+                <label for="user_tel">핸드폰번호 <input type="tel" name="user_tel" id="user_tel" placeholder="000-0000-0000"
+                        pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}" title="전화번호는 3-(3~4)-4형식이어야합니다.">
+                </label>
+                <hr>
+                <label for="user_email">e-mail <input type="email" name="user_email" id="user_email"
+                        placeholder="xxx@xxxxx.xxx">
+                </label>
+                <hr>
+                <label for="user_addr">주소 <input type="text" name="user_addr" id="user_addr">
+                </label>
+            </div>
         </fieldset>
-        <div>
-            <input type="submit" value="회원가입">
+        <div class="signUpBtn">
+            <input type="submit" onclick="signCheck()" value="회원가입">
             <input type="reset" value="취소">
         </div>
-
     </form>
+
 </body>
 
 </html>
